@@ -62,6 +62,12 @@
             text-align: center;
             color: #fac293;
         }
+        #hoduImg {
+            width: 396px;
+            height: 396px;
+            border: solid 10px #fac293;
+            border-radius: 300px;
+        }
         #content {
             width: 608px;
             height: 125px;
@@ -72,7 +78,7 @@
             font-style: normal;
             line-height: 1.2;
             letter-spacing: normal;
-            text-align: left;
+            text-align: center;
             color: #fac293; 
         }
         #footer {
@@ -85,7 +91,7 @@
             font-style: normal;
             line-height: 1.2;
             letter-spacing: normal;
-            text-align: left;
+            text-align: center;
             color: #707070;
         }
     </style>
@@ -95,7 +101,7 @@
     <view id='leftView'>
         <div id='menu'></div>
         <div id='hoduMenu'>
-            <a id='hoduText' href='hodu.html'>HODU</a>
+            <a id='hoduText'>HODU</a>
         </div>
         <div id='maruMenu'>
             <a id='maruText' href='maru.html'>MARU</a>
@@ -103,7 +109,7 @@
     </view>
     <view id='centerView'>
         <p id='title'>HODU</p>
-        <img source='../hodu.png' style='width: 50%'>
+        <img id='hoduImg' source='../hodu.png'>
         <p id='content'>
             첫째<br>
             삼색이고양이<br>
