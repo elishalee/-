@@ -1,10 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        #leftView {
+            align-items: left;
+        }
+        #menu {
+            width: 100px;
+            height: 1080px;
+            margin-left: 0px;
+            position: absolute;
+            background-color: #faf0c6;
+        }
+        #hoduMenu {
+            width: 143px;
+            height: 96px;
+            margin-left: 100px;
+            text-align: center;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            background-color: #faf0c6;
+        }
+        #hoduText {
+            font-family: RoundyRainbows;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #maruMenu {
+            width: 143px;
+            height: 96px;
+            margin-left: 100px;
+            margin-top: 23px;
+            text-align: center;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            background-color: #c2ffde;
+        }
+        #maruText {
+            font-family: RoundyRainbows;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        #centerView {
+            align-items: center;
+            position: absolute;
+        }
+        #title {
+            width: 430px;
+            height: 71px;
+            font-family: RoundyRainbows;
+            font-size: 50px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.16;
+            letter-spacing: normal;
+            text-align: center;
+            color: #c2ffde;
+        }
+        #maruImg {
+            width: 396px;
+            height: 396px;
+            border: solid 10px #c2ffde;
+            border-radius: 300px;
+        }
+        #content {
+            width: 608px;
+            height: 125px;
+            font-family: Apple SD Gothic Neo;
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: center;
+            color: #c2ffde; 
+        }
+        #footer {
+            width: 342px;
+            height: 27px;
+            font-family: AppleSDGothicNeo;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: center;
+            color: #707070;
+        }
+    </style>
     <meta charset="utf-8">
-    <h3>마루</h3>
 </head>
 <body>
-    <p>우리 <strong>마루</strong>는 게으르지만 사랑스러운 저희 집 <u>둘째</u> 고양이입니다</p>
+    <view id='leftView'>
+        <div id='menu'></div>
+        <div id='hoduMenu'>
+            <a id='hoduText' href='hodu.html'>HODU</a>
+        </div>
+        <div id='maruMenu'>
+            <a id='maruText'>MARU</a>
+        </div>
+    </view>
+    <view id='centerView'>
+        <p id='title'>MARU</p>
+        <img id='maruImg' source='../maru.png'>
+        <p id='content'>
+            둘째<br>
+            젖소고양이<br>
+            댕댕냥이<br>
+            사람을너무좋아함
+        </p>
+        <p id='footer'>2020 © MyCatFriends by Elisha Lee</p>
+    </view>
 </body>
 </html>
